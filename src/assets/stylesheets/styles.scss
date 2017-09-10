@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:900|Open+Sans:300,800');
+
+$background: white;
+$background-header: #fbdf5d;
+$background-footer: #333333;
+$color-header: black;
+$color-footer: #ffffff;
+$color: rgb(0,0,0);
+$font-size: 1rem;
+$lato: "Lato", sans-serif;
+$openSans: "Open Sans", sans-serif;
+
+body {
+  background-color: $background;
+  color: $color;
+  margin: 0;
+  padding: 0,
+  
+}
+.navigation {
+  font-family: $lato;
+  font-weight: 900;
+  background: $background-header;
+  color: $color-header;
+ 
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    li {
+      display: inline-flex;
+      width: 160px;
+      justify-content: center;
+      text-transform: uppercase;
+      padding: 65px 0;
+      font-size: 0.75em;
+      letter-spacing: 0.0625em;
+
+      &.logo {
+        background: url('../images/logo_black_large.png') no-repeat 80px 40px;
+        color: transparent;
+        padding: 0 80px;
+      }
+    }
+  }
+}
+
+.content {
+  height: 400px;
+}
+
+.footer {
+  background: $background-footer;
+  color: $color-footer;
+  height: 110px;
+}
