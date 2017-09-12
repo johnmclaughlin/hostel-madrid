@@ -49,7 +49,30 @@ body {
 }
 
 .content {
-  height: 400px;
+  
+  &__container {
+    display: flex;
+  }
+  &__left {
+    display: inline-flex;
+    width: 50%;
+  }
+  &__right {
+    width: 49%;
+  }
+
+}
+
+.promocard {
+  width:  382px;
+  height: 410px;
+
+  &.promo1 {
+    background: url('../images/promo1.png') no-repeat;
+  }
+  &.promo2 {
+    background: url('../images/promo2.png') no-repeat;
+  }
 }
 
 .footer {

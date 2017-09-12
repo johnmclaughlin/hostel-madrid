@@ -12,14 +12,12 @@ import city from '../assets/images/madrid-cityscape_1200x600.jpg';
 
 const masthead = () => {
     return (
-        <Carousel showArrows={true}>
+        <Carousel showArrows={true} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={true}>
             <div>
                 <img src={hostel} />
-                <p className="legend">Legend 1</p>
             </div>
             <div>
                 <img src={city} />
-                <p className="legend">Legend 2</p>
             </div>
         </Carousel>
     )
