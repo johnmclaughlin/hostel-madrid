@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "location",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet sapien lorem, vel laoreet ex aliquam ac. Donec accumsan mattis augue.",
+    "icon": "location"
+  },
+  {
+    "id": 2,
+    "title": "events",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet sapien lorem, vel laoreet ex aliquam ac. Donec accumsan mattis augue.",
+    "icon": "calendar"
+  },
+  {
+    "id": 3,
+    "title": "eat, drink, relax",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet sapien lorem, vel laoreet ex aliquam ac. Donec accumsan mattis augue.",
+    "icon": "cocktail"
+  },
+  {
+    "id": 4,
+    "title": "our people",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet sapien lorem, vel laoreet ex aliquam ac. Donec accumsan mattis augue.",
+    "icon": "smile"
+  }
+]

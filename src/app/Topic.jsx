@@ -1,15 +1,34 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
-var title = "location";
-var description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet sapien lorem, vel laoreet ex aliquam ac. Donec accumsan mattis augue.";
+class GetTopics extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      topics: []
+    };
+  }
 
-const topic = () => {
+  componentDidMount() {
+    axios.get(`topics.json`)
+      .then(res => {
+        const topics = res.data
+        this.setState({ topics });
+      });
+  }
+
+  render() {
     return (
-        <div className="topic__container">
-            <div className="topic__container-title">{title}</div>
-            <div className="topic__container-description">{description}</div>
+        <div className="topic__wrapper">
+          {this.state.topics.map(topic =>
+            <div className={"topic__container " + topic.icon} key={topic.id}>
+                <div className="topic__container--title">{topic.title}</div>
+                <div className="topic__container--description">{topic.copy}</div>
+            </div>     
+        )}
         </div>
-    )
+    );
+  }
 }
 
-export default topic;
+export default GetTopics;

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "price": "36",
+    "copy": "for 3 nights",
+    "color": "#ffffff",
+    "background": "/images/promo1.png",
+    "banner": "rgba(255,0,0,0.7)"
+  },
+    {
+    "id": 2,
+    "price": "0",
+    "copy": "walking tours",
+    "color": "#fbdf5d",
+    "background": "/images/promo2.png",
+    "banner": "rgba(0,0,0,0.7)"
+  }
+]
