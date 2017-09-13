@@ -1,0 +1,58 @@
+$background: white;
+$background-header: #fbdf5d;
+$background-footer: #333333;
+$color-header: black;
+$color-footer: #ffffff;
+$color: rgb(0,0,0);
+$font-size: 16px;
+$lato: "Lato", sans-serif;
+$openSans: "Open Sans", sans-serif;
+$merriweather: "Merriweather", serif;
+
+.footer {
+  background: $background-footer;
+  color: $color-footer;
+  height: 110px;
+  padding-top: 36px;
+
+  &__container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    background: url('../images/logo_white_small.png') no-repeat;
+    height: 40px;
+    padding-left: 115px;
+  }
+  &__address {
+    font-family: $openSans;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  &__social {
+    
+
+    &--twitter {
+      background: url('../icons/twitter.png') no-repeat;
+      width: 17px;
+      height: 15px;
+      display: inline-flex;
+    }
+    &--facebook {
+      background: url('../icons/facebook.png') no-repeat;
+      width: 10px;
+      height: 20px;
+      display: inline-flex;
+      margin: 0 50px;
+    }
+    &--google {
+      background: url('../icons/googleplus.png') no-repeat;
+      width: 18px;
+      height: 20px;
+      display: inline-flex;
+    }
+  }
+}

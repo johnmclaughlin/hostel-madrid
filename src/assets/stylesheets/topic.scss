@@ -1,0 +1,39 @@
+$background: white;
+$background-header: #fbdf5d;
+$background-footer: #333333;
+$color-header: black;
+$color-footer: #ffffff;
+$color: rgb(0,0,0);
+$font-size: 16px;
+$lato: "Lato", sans-serif;
+$openSans: "Open Sans", sans-serif;
+$merriweather: "Merriweather", serif;
+
+.topic__container {
+  color: #222222;
+  padding: 0 0 50px 85px;
+  width: 460px;
+
+  &.location {
+    background: url('../icons/location.png') no-repeat;
+  }
+  &.calendar {
+    background: url('../icons/calendar.png') no-repeat;
+  }
+  &.cocktail {
+    background: url('../icons/cocktail.png') no-repeat;
+  }
+  &.smile {
+    background: url('../icons/smile.png') no-repeat;
+  }
+  &--title {
+    text-transform: uppercase;
+    font-family: $openSans;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  &--description {
+    font-family: $merriweather;
+    font-size: 16px;
+  }
+}

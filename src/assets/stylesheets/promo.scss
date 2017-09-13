@@ -1,0 +1,49 @@
+$background: white;
+$background-header: #fbdf5d;
+$background-footer: #333333;
+$color-header: black;
+$color-footer: #ffffff;
+$color: rgb(0,0,0);
+$font-size: 16px;
+$lato: "Lato", sans-serif;
+$openSans: "Open Sans", sans-serif;
+$merriweather: "Merriweather", serif;
+
+.promocard {
+  height: 410px;
+  font-family: $openSans;
+  font-weight: 800;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+
+  &__wrapper {
+    padding-bottom: 60px;
+  }
+
+  &__banner {
+    background: rgba(255,0,0,0.7);
+    height: 180px;
+    width: 100%;
+    padding-left: 20px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 1;
+    margin-top: 30px;
+  }
+  &__copy {
+    font-weight: 300;
+    font-size: 40px;
+  }
+
+  &.promo1 {
+    background: url('../images/promo1.png') no-repeat;
+  }
+  &.promo2 {
+    background: url('../images/promo2.png') no-repeat;
+  }
+}

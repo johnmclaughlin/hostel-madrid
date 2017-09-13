@@ -1,4 +1,7 @@
 require('./assets/stylesheets/styles.scss');
+require('./assets/stylesheets/topic.scss');
+require('./assets/stylesheets/promo.scss');
+require('./assets/stylesheets/footer.scss');
 
 //import React from 'react';
 import React, { Component } from 'react';
