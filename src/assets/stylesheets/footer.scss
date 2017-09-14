@@ -1,14 +1,3 @@
-$background: white;
-$background-header: #fbdf5d;
-$background-footer: #333333;
-$color-header: black;
-$color-footer: #ffffff;
-$color: rgb(0,0,0);
-$font-size: 16px;
-$lato: "Lato", sans-serif;
-$openSans: "Open Sans", sans-serif;
-$merriweather: "Merriweather", serif;
-
 .footer {
   background: $background-footer;
   color: $color-footer;
@@ -17,7 +6,8 @@ $merriweather: "Merriweather", serif;
 
   &__container {
     display: flex;
-    width: 930px;
+    width: 77.5%;
+    max-width: 930px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;

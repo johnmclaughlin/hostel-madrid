@@ -1,16 +1,25 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+STYLES.CSS
+\*------------------------------------*/
+
+/**
+ * Base
+ */
+@import "normalize";
+@import "vars";
+@import "mixins";
+
 @import url('https://fonts.googleapis.com/css?family=Lato:900|Open+Sans:300,800');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-$background: white;
-$background-header: #fbdf5d;
-$background-footer: #333333;
-$color-header: black;
-$color-footer: #ffffff;
-$color: rgb(0,0,0);
-$font-size: 16px;
-$lato: "Lato", sans-serif;
-$openSans: "Open Sans", sans-serif;
-$merriweather: "Merriweather", serif;
+/**
+ * Components
+ */
+ @import "footer";
+ @import "promo";
+ @import "topic";
 
 body {
   background-color: $background;
@@ -50,12 +59,13 @@ body {
   }
 }
 .greeting {
-  width: 930px;
+  width: 77.5%;
   margin: 0 auto;
   font-family: $openSans;
   font-weight: 300;
   font-size: 40px;
   padding: 50px 0 60px 0;
+  max-width: 930px;
 
   span {
     font-weight: 800;
@@ -70,14 +80,30 @@ body {
   
   &__container {
     display: flex;
-    width: 930px;
+    width: 77.5%;
     margin: 0 auto;
+    max-width: 930px;
+    flex-direction: column;
+    @include respond-to($desktop) {
+      flex-direction: row;
+    }
+  }
+  @include respond-to($desktop) {
+    &__container {
+      flex-direction: row;
+    }
   }
   &__left {
-    width: 59%;
+    width: 100%;
+    @include respond-to($desktop) {
+      width: 59%;
+    }
     
   }
   &__right {
-    width: 41%;
+    width: 100%;
+    @include respond-to($desktop) {
+      width: 41%;
+    }
   }
 }
