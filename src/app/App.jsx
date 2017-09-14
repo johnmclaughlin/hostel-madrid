@@ -1,32 +1,14 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-class FetchDemo extends React.Component {
-  constructor(props) {
-    super(props);
+import Header from './Header.jsx';
+import Greeting from './Greeting.jsx';
+import Masthead from './Masthead.jsx';
+import Topic from './Topic.jsx';
+import Promocard from './Promo.jsx';
 
-    this.state = {
-      posts: []
-    };
-  }
-
-  componentDidMount() {
-    axios.get(`https://www.reddit.com/r/${this.props.subreddit}.json`)
-      .then(res => {
-        const posts = res.data.data.children.map(obj => obj.data);
-        this.setState({ posts });
-      });
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>{`/r/${this.props.subreddit}`}</h1>
-        <ul>
-          {this.state.posts.map(post =>
-            <li key={post.id}>{post.title}</li>
-          )}
-        </ul>
-      </div>
-    );
-  }
-}
+ReactDOM.render(<Header />, document.querySelector('.navigation'));
+ReactDOM.render(<Masthead />, document.querySelector('.masthead'));
+ReactDOM.render(<Greeting />, document.querySelector('.greeting'));
+ReactDOM.render(<Topic />, document.querySelector('.topics'));
+ReactDOM.render(<Promocard />, document.querySelector('.promocards'));
