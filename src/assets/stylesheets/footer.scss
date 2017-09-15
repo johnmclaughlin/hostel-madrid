@@ -2,15 +2,23 @@
   background: $background-footer;
   color: $color-footer;
   height: 110px;
-  padding-top: 36px;
+  padding-top: 26px;
+
+  @include respond-to($tablet) {
+    padding-top: 36px;
+  }
 
   &__container {
     display: flex;
-    width: 77.5%;
+    width: 88%;
     max-width: 930px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+
+    @include respond-to($tablet) {
+      width: 77.5%;
+    }
   }
   &__logo {
     background: url('../images/logo_white_small.png') no-repeat;
@@ -36,7 +44,11 @@
       width: 10px;
       height: 20px;
       display: inline-flex;
-      margin: 0 50px;
+      margin: 0 10px;
+      
+      @include respond-to($tablet) {
+        margin: 0 50px;
+      }
     }
     &--google {
       background: url('../icons/googleplus.png') no-repeat;

@@ -22,7 +22,7 @@ class GetGreeting extends React.Component {
         <div className="greetings__wrapper">
           {this.state.greetings.map(greeting =>
             <div className="greeting__container" key={greeting.id}>
-                <div className="greeting__container--title"><span>{greeting.greeting}</span>{greeting.message}</div>
+                <div className="greeting__container--title"><span>{greeting.greeting}</span> {greeting.message}</div>
                 <div className="greeting__container--copy">{greeting.copy}</div>
             </div>     
         )}
