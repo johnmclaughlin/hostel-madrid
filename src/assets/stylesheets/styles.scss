@@ -107,3 +107,56 @@ body {
     }
   }
 }
+
+.talkbubble {
+  width: 120px;
+  height: 80px;
+  background: #fade67;
+  position: relative;
+}
+.talkbubble:before {
+  content:"";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #fade67;
+  border-bottom: 13px solid transparent;
+}
+
+.breadcrumb {
+  font-family: $openSans;
+  font-weight: 800;
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+
+  span {
+    color: #fade67;
+  }
+}
+.about {
+  
+  &__info {
+    color: #222222;
+
+    &--title {
+      font-family: $openSans;
+      font-weight: 800;
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+    &--copy {
+      font-family: $merriweather;
+      font-size: 16px;
+    }
+  }
+
+  &__promo {
+    .promo1, .promo2 {
+      display: none;
+    }
+  }
+}

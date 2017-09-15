@@ -14,5 +14,13 @@
     "color": "#fbdf5d",
     "background": "/images/promo2.png",
     "banner": "rgba(0,0,0,0.7)"
-  }
+  },
+  {
+  "id": 3,
+  "price": "8",
+  "copy": "3 course meal",
+  "color": "#ffffff",
+  "background": "/images/promo3.png",
+  "banner": "rgba(255,0,0,0.7)"
+}
 ]
