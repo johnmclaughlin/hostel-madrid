@@ -1,28 +1,44 @@
 .topic__container {
   color: #222222;
-  padding: 0 0 50px 85px;
-  width: 84%;
+  padding: 0 0 20px 13%;
+  width: 95%;
+
+  @include respond-to($tablet) {
+    padding: 0 0 50px 85px;
+  }
 
   &.location {
     background: url('../icons/location.png') no-repeat;
+    background-size: 10%;
   }
   &.calendar {
     background: url('../icons/calendar.png') no-repeat;
+    background-size: 10%;
   }
   &.cocktail {
     background: url('../icons/cocktail.png') no-repeat;
+    background-size: 10%;
   }
   &.smile {
     background: url('../icons/smile.png') no-repeat;
+    background-size: 10%;
   }
   &--title {
     text-transform: uppercase;
     font-family: $openSans;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 16px;
+
+    @include respond-to($tablet) {
+      font-size: 20px;
+    }
   }
   &--description {
     font-family: $merriweather;
-    font-size: 16px;
+    font-size: 12px;
+
+    @include respond-to($tablet) {
+      font-size: 16px;
+    }
   }
 }

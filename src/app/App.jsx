@@ -11,4 +11,4 @@ ReactDOM.render(<Header />, document.querySelector('.navigation'));
 ReactDOM.render(<Masthead />, document.querySelector('.masthead'));
 ReactDOM.render(<Greeting />, document.querySelector('.greeting'));
 ReactDOM.render(<Topic />, document.querySelector('.topics'));
-ReactDOM.render(<Promocard />, document.querySelector('.promocards'));
+ReactDOM.render(<div className="home__promo"><Promocard /></div>, document.querySelector('.promocards'));

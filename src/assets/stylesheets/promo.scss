@@ -1,5 +1,4 @@
 .promocard {
-  height: 410px;
   font-family: $openSans;
   font-weight: 800;
   display: flex;
@@ -55,11 +54,46 @@
 
   &.promo1 {
     background: url('../images/promo1.png') no-repeat;
+    background-size: cover;
+    margin-right: 0;
+
+    @include respond-to($tablet) {
+      margin-right: 10px;
+    }
+
+    @include respond-to($desktop) {
+      margin-right: 0;
+    }
   }
   &.promo2 {
     background: url('../images/promo2.png') no-repeat;
+    background-size: cover;
+    margin-left: 0;
+    
+    @include respond-to($tablet) {
+      margin-left: 10px;
+    }
+
+    @include respond-to($desktop) {
+      margin-left: 0;
+    }
   }
   &.promo3 {
     background: url('../images/promo3.png') no-repeat;
+    background-size: cover;
   }
+}
+.square {
+  /* keep the promocards square */
+  width: 100%;
+}
+.square:before {
+  content: "";
+  float: left;
+  padding-bottom: 100%;
+}
+.square:after {
+  content: "";
+  display: table;
+  clear: both;
 }

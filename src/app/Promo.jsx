@@ -22,7 +22,7 @@ class GetPromos extends React.Component {
     return (
         <div className="promocard__wrapper">
           {this.state.promos.map(promo =>
-            <div className={"promocard promo" + promo.id} style={{color: promo.color}} key={promo.id}>
+            <div className={"promocard square promo" + promo.id} style={{color: promo.color}} key={promo.id}>
             <div className="promocard__banner" style={{background: promo.banner}}>
                 <div className="promocard__price">&euro;{promo.price}</div>
                 <div className="promocard__copy">{promo.copy}</div>
