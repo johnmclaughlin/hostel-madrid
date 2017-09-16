@@ -26,7 +26,6 @@
   }
 
   &__banner {
-    background: rgba(255,0,0,0.7);
     width: 100%;
     padding-left: 20px;
     text-transform: uppercase;
@@ -84,7 +83,7 @@
   }
 }
 .square {
-  /* keep the promocards square */
+  /* scale + keep the promocards square */
   width: 100%;
 }
 .square:before {

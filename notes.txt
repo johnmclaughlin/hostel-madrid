@@ -1,0 +1,27 @@
+Hostel Mardrid Notes
+
+lat/lon for map center: { lat: 40.419949, lng: -3.6985000 },
+
+TODOs
+
+1. mobile nav - react-burger-menu
+2. reformat data from component to page to simulate CMS
+3. abstract JSON read single function 
+4. reorganize file structure into component folders
+5. <done> use variables for all colors in CSS
+6. get the fucking router working
+7. set up some unit tests
+    a. JSON read is a good test
+8. add an autoprefixer
+9. responsive image loader?
+10. add Contact Us button to Promo Tile 3
+11. style info box on map
+12. add map coords by JSON
+13. add Read Our Story link on About page
+14. stub out other pages
+15. arrows and dots on slider
+16. scale down footer slightly for smallest media query
+17. write up a clear README
+18. cross browser test
+19. make a funny 404
+20. Deploy to Red Hat or Heroko
