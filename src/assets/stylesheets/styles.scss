@@ -51,14 +51,13 @@ body {
       letter-spacing: 0.0625em;
 
       &.logo {
-        background: url('../images/logo_black_large.png') no-repeat 80px 40px;
-        color: transparent;
         width: 320px;
+        padding: 37px 0;
       }
     }
   }
 }
-.greeting {
+.greeting__container {
   width: 77.5%;
   margin: 0 auto;
   font-family: $openSans;
@@ -75,7 +74,7 @@ body {
   span {
     font-weight: 800;
   }
-  &__container--copy {
+  &--copy {
     font-family: $merriweather;
     font-size: 12px;
     color: #e71a4a;
