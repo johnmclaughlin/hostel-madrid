@@ -10,6 +10,10 @@
     width: 100%;
     }
 
+    .promocard__contact {
+      display: none;
+    }
+
   &__wrapper {
     padding-bottom: 60px;
     display: flex;
@@ -80,6 +84,18 @@
   &.promo3 {
     background: url('../images/promo3.png') no-repeat;
     background-size: cover;
+
+    .promocard__contact {
+      display: block;
+      font-family: $lato;
+      font-weight: 900;
+      font-size: 11px;
+      border: 2px solid $background;
+      width: 125px;
+      padding: 7px 0;
+      margin: -15px 0 20px 0;
+      text-align: center;
+    }
   }
 }
 .square {

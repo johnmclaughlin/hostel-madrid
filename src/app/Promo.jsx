@@ -26,6 +26,7 @@ class GetPromos extends React.Component {
             <div className="promocard__banner" style={{background: promo.banner}}>
                 <div className="promocard__price">&euro;{promo.price}</div>
                 <div className="promocard__copy">{promo.copy}</div>
+                <div className="promocard__contact">contact us</div>
             </div>
         </div>          
         )}

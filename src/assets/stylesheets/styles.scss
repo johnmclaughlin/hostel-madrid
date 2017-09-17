@@ -20,6 +20,8 @@ STYLES.CSS
  @import "footer";
  @import "promo";
  @import "topic";
+ @import "about";
+
 
 body {
   background-color: $background;
@@ -68,7 +70,7 @@ body {
 
   @include respond-to($tablet) {
     font-size: 40px;
-    padding: 50px 0 60px 0;
+    padding: 50px 0 30px 0;
   }
 
   span {
@@ -94,6 +96,7 @@ body {
     flex-direction: column;
     @include respond-to($desktop) {
       flex-direction: row;
+      padding-top: 30px;
     }
   }
   @include respond-to($desktop) {
@@ -116,58 +119,6 @@ body {
   }
 }
 
-.talkbubble {
-  width: 120px;
-  height: 80px;
-  background: $brand-yellow;
-  position: relative;
-}
-.talkbubble:before {
-  content:"";
-  position: absolute;
-  right: 100%;
-  top: 26px;
-  width: 0;
-  height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid $brand-yellow;
-  border-bottom: 13px solid transparent;
-}
-
-.breadcrumb {
-  font-family: $openSans;
-  font-weight: 800;
-  font-size: 11px;
-  color: $color-breadcrumb;
-  text-transform: uppercase;
-
-  span {
-    color: $brand-yellow;
-  }
-}
-.about {
-  
-  &__info {
-    color: $color-copy;
-
-    &--title {
-      font-family: $openSans;
-      font-weight: 800;
-      font-size: 40px;
-      text-transform: uppercase;
-    }
-    &--copy {
-      font-family: $merriweather;
-      font-size: 16px;
-    }
-  }
-
-  &__promo {
-    .promo1, .promo2 {
-      display: none;
-    }
-  }
-}
 .home__promo .promo3 {
   display: none;
 }
