@@ -32,6 +32,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: $color;
 }
 .mobileNav {
   display: block;
@@ -61,10 +62,6 @@ a {
       padding: 65px 0;
       font-size: 0.75em;
       letter-spacing: 0.0625em;
-
-      a {
-        color: $color;
-      }
 
       @include respond-to($tablet) {
         display: inline-flex;
@@ -157,7 +154,7 @@ a {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: $background-footer;
 }
 
 /* Position and sizing of clickable cross button */
@@ -168,13 +165,13 @@ a {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: $background-footer;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
+  background: $brand-yellow;
+  padding: 3.5em 2.5em 0;
   font-size: 1.15em;
 }
 
@@ -187,6 +184,13 @@ a {
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
+
+  a {
+    font-family: $lato;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 5px 0;
+  }
 }
 
 /* Styling of overlay */

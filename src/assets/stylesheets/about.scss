@@ -1,23 +1,4 @@
-
-.talkbubble {
-    width: 120px;
-    height: 80px;
-    background: $brand-yellow;
-    position: relative;
-  }
-  .talkbubble:before {
-    content:"";
-    position: absolute;
-    right: 100%;
-    top: 26px;
-    width: 0;
-    height: 0;
-    border-top: 13px solid transparent;
-    border-right: 26px solid $brand-yellow;
-    border-bottom: 13px solid transparent;
-  }
-  
-  .breadcrumb {
+.breadcrumb {
     font-family: $openSans;
     font-weight: 800;
     font-size: 11px;
@@ -42,14 +23,14 @@
     &__content {
       display: flex;
       flex-direction: column;
-
-
-      width: 77.5%;
+      width: 100%;
       margin: 0 auto;
-
       padding-bottom: 20px;
       max-width: 930px;
 
+      @include respond-to($tablet) {
+        width: 77.5%;
+      }
 
       @include respond-to($desktop) {
         flex-direction: row;
@@ -90,7 +71,16 @@
     }
   
     &__promo {
-        width: 41%;
+        width: 100%;
+        margin-top: 20px;
+
+        @include respond-to($tablet) {
+            
+        }
+    
+        @include respond-to($desktop) {
+            width: 41%;
+        }
 
       .promo1, .promo2 {
         display: none;
@@ -102,6 +92,14 @@
 
     &__container {
         height: 380px;
-        width: 58%;
+        width: 100%;
+
+        @include respond-to($tablet) {
+            
+        }
+    
+        @include respond-to($desktop) {
+            width: 58%;
+        }
     }
   }
