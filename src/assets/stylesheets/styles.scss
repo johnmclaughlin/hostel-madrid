@@ -30,6 +30,16 @@ body {
   padding: 0;
   font-size: $font-size;
 }
+a {
+  text-decoration: none;
+}
+.mobileNav {
+  display: block;
+
+  @include respond-to($tablet) {
+    display: none;
+  }  
+}
 .navigation {
   font-family: $lato;
   font-weight: 900;
@@ -44,7 +54,7 @@ body {
     margin: 0;
 
     li {
-      display: inline-flex;
+      display: none;
       width: 160px;
       justify-content: center;
       text-transform: uppercase;
@@ -52,9 +62,22 @@ body {
       font-size: 0.75em;
       letter-spacing: 0.0625em;
 
+      a {
+        color: $color;
+      }
+
+      @include respond-to($tablet) {
+        display: inline-flex;
+      }
+
       &.logo {
         width: 320px;
         padding: 37px 0;
+        display: flex;
+
+        @include respond-to($tablet) {
+          display: inline-flex;
+        }
       }
     }
   }
@@ -121,4 +144,52 @@ body {
 
 .home__promo .promo3 {
   display: none;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.5);
 }

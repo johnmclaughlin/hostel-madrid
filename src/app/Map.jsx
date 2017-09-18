@@ -4,7 +4,8 @@ import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
-  Marker
+  Marker,
+  InfoWindow
 } from "react-google-maps";
 import {InfoBox} from "react-google-maps/lib/components/addons/InfoBox";
 import MapMarker from '../assets/images/marker.png';
@@ -26,18 +27,15 @@ const StyledMapWithAnInfoBox = compose(
     defaultCenter={props.center}
     defaultOptions={{ /*styles: demoFancyMapStyles*/ }}
   >
-    
-    <InfoBox
+    <InfoWindow
       defaultPosition={new google.maps.LatLng(props.marker.lat, props.marker.lng)}
       options={{ closeBoxURL: ``, enableEventPropagation: true }}
     >
       <div>
         <img src={MapMarker} />
       </div>
-    </InfoBox>
+    </InfoWindow>
   </GoogleMap>
 );
 
 export default StyledMapWithAnInfoBox;
-
-//<StyledMapWithAnInfoBox />
