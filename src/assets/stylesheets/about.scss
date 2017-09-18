@@ -80,6 +80,7 @@
     
         @include respond-to($desktop) {
             width: 41%;
+            margin-top: 0;
         }
 
       .promo1, .promo2 {

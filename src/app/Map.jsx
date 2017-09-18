@@ -9,6 +9,14 @@ import {
 } from "react-google-maps";
 import {InfoBox} from "react-google-maps/lib/components/addons/InfoBox";
 import MapMarker from '../assets/images/marker.png';
+import axios from 'axios';
+
+axios.get(`map.json`)
+      .then(res => {
+        console.log(res.data[0]);
+        // const promos = res.data
+        // this.setState({ promos });
+      });
 
 const StyledMapWithAnInfoBox = compose(
   withProps({
@@ -27,14 +35,14 @@ const StyledMapWithAnInfoBox = compose(
     defaultCenter={props.center}
     defaultOptions={{ /*styles: demoFancyMapStyles*/ }}
   >
-    <InfoWindow
+    <InfoBox
       defaultPosition={new google.maps.LatLng(props.marker.lat, props.marker.lng)}
-      options={{ closeBoxURL: ``, enableEventPropagation: true }}
+      options={{ closeBoxURL: ``, enableEventPropagation: true,  pixelOffset: new google.maps.Size(-140, -140) }}
     >
       <div>
         <img src={MapMarker} />
       </div>
-    </InfoWindow>
+    </InfoBox>
   </GoogleMap>
 );
 
