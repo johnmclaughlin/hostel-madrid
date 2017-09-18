@@ -1,8 +1,7 @@
 # hostel-madrid
 
 ## Setup
-npm install
-
+npm install <br>
 npm run start
 
 Note: Presently, this project requires Node 7 [ I'm running 7.10.1 ]. One of the dependencies is breaking under Node 8.
